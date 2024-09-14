@@ -1,3 +1,4 @@
+```
 my-microservices/
 ├── hr-service/
 │   ├── cmd/
@@ -21,3 +22,4 @@ my-microservices/
 │   ├── init.sql
 ├── docker-compose.yml
 └── README.md
+```
