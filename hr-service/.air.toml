@@ -1,0 +1,22 @@
+# .air.toml
+
+# コンフィグファイルの基本設定
+[build]
+  # Goコードをビルドするためのコマンド
+  cmd = "go build -o ./tmp/main ./cmd/main.go"
+  # ビルドの出力先
+  bin = "./tmp/main"
+  # ビルド後に実行するコマンド
+  full_bin = "APP_ENV=dev ./tmp/main"
+  # ウォッチ対象のディレクトリ
+  watch_dir = "./"
+
+# .goファイルに加えて、.htmlや.envファイルの変更も監視したい場合
+[[include_ext]]
+  ext = ".go"
+
+[[include_ext]]
+  ext = ".html"
+
+[[include_ext]]
+  ext = ".env"

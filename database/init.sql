@@ -1,11 +1,5 @@
-CREATE TABLE IF NOT EXISTS employees (
-    id SERIAL PRIMARY KEY,
-    name TEXT NOT NULL,
-    position TEXT NOT NULL
-);
+-- HR用データベースの作成
+CREATE DATABASE hrdb;
 
-CREATE TABLE IF NOT EXISTS workflows (
-    id SERIAL PRIMARY KEY,
-    title TEXT NOT NULL,
-    status TEXT NOT NULL
-);
+-- WF用データベースの作成
+CREATE DATABASE wfdb;
