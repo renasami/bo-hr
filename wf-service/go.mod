@@ -1,4 +1,4 @@
-module github.com/renasami/bo-hr/hr-service
+module github.com/renasami/bo-hr/wf-service
 
 go 1.20
 
