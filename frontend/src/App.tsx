@@ -1,18 +1,19 @@
 import "@mantine/core/styles.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { CreatePage } from "./pages/CreatePage";
+import { UserTitle } from "./pages/CreatePage";
 import { Route } from "./pages/Route";
 import { Branch } from "./pages/Branch";
+import { Users } from "./pages/Users";
 
 function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <CreatePage />,
+      element: <UserTitle />,
     },
     {
       path: "/user-title",
-      element: <CreatePage />,
+      element: <UserTitle />,
     },
     {
       path: "/branch",
@@ -21,6 +22,10 @@ function App() {
     {
       path: "/route",
       element: <Route />,
+    },
+    {
+      path: "/users",
+      element: <Users />,
     },
   ]);
 

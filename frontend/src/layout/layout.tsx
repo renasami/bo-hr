@@ -22,6 +22,10 @@ export function Layout({ children }: LayoutProps) {
       name: "ルート",
       path: "route",
     },
+    {
+      name: "ユーザー",
+      path: "users",
+    },
   ];
 
   return (
