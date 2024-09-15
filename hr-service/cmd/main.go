@@ -18,6 +18,8 @@ func main() {
 		fmt.Fprintf(w, "<h1>Hello</h1>")
 	}).Methods("GET")
 
+	r.HandleFunc("/user_title", handler.CreateUserTitle).Methods("POST")
+
 	log.Println("Starting HR service on port 8081...")
 	log.Fatal(http.ListenAndServe("localhost:8081", r))
 }
