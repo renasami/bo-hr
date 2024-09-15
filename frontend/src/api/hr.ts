@@ -6,7 +6,7 @@ export const createUserTitle = async (
   tenantNameId: string,
   titleName: string
 ) => {
-  const url = "/create-user-title";
+  const url = "/user_title";
 
   const options: RequestInit = {
     method: "POST",

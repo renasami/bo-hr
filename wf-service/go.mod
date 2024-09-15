@@ -1,6 +1,6 @@
 module github.com/renasami/bo-hr/wf-service
 
-go 1.20
+go 1.23.1
 
 require (
 	github.com/gorilla/mux v1.8.1

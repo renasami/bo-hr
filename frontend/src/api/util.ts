@@ -7,6 +7,9 @@ export const customFetch = async <T extends never>(
     throw new Error("some fucking error is occurred");
   }
 
+  console.log(options);
+  console.log(base + path);
+
   const response = await fetch(base + path, options);
 
   if (!response.ok) {

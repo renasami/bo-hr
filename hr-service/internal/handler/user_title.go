@@ -3,6 +3,7 @@ package handler
 import (
 	"context"
 	"encoding/json"
+	"log/slog"
 	"net/http"
 
 	"github.com/gofrs/uuid"
@@ -29,6 +30,7 @@ func CreateUserTitle(w http.ResponseWriter, r *http.Request) {
 	title_id, _ := uuid.NewV4()
 	_, err = conn.Exec(context.Background(), query, userTitle.TenantNameID, title_id, userTitle.TitleName)
 	if err != nil {
+		slog.Error("Failed to update user title", err.Error())
 		http.Error(w, "Failed to update user title", http.StatusInternalServerError)
 		return
 	}
