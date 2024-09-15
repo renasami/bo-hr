@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/renasami/bo-hr/hr-serivce/domain/base"
+	"github.com/renasami/bo-hr/hr-service/domain/base"
 	"github.com/renasami/bo-hr/hr-service/internal/db"
 )
 
