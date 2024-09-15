@@ -13,5 +13,5 @@ func main() {
 	r.HandleFunc("/workflows", handler.GetWorkflows).Methods("GET")
 
 	log.Println("Starting WF service on port 8082...")
-	log.Fatal(http.ListenAndServe(":8082", r))
+	log.Fatal(http.ListenAndServe("localhost:8082", r))
 }

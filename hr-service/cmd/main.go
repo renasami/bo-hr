@@ -19,5 +19,5 @@ func main() {
 	}).Methods("GET")
 
 	log.Println("Starting HR service on port 8081...")
-	log.Fatal(http.ListenAndServe(":8081", r))
+	log.Fatal(http.ListenAndServe("localhost:8081", r))
 }
